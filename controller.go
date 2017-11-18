@@ -24,8 +24,8 @@ func registrationCtrl()  {
   //   Password: f["Password"],
   // }
   //registrationView()
-  u := User{}
-  u.Save("user.json")
+  // u := User{}
+  // u.Save("user.json")
   
 }
 
@@ -46,38 +46,6 @@ func registrationCtrl()  {
 // }
 // func loginCntrl(){
 
-
-// }
-
-//     func view_profile(){
-//       clear_screen(opts)
-//       output = view_profile(opts)
-
-//       case output[:steps].last[:option].to_i
-//       when 1
-//         edit_profile(output)
-//       when 2
-//         main_menu(output)
-//       else
-//         output[:flash_msg] = "Wrong option entered, please retry."
-//         view_profile(output)
-//     }
-
-//     func edit_profile(){
-//       clear_screen(opts)
-//       output = edit_profile(opts)
-//       user = User.new(
-//         name:     output[:name],
-//         email:    output[:email],
-//         phone:    output[:phone],
-//         password: output[:password]
-//       )
-//       user.persist!
-//       output[:user] = user
-
-//       output[:flash_msg] = "Edit profile successful!"
-//       view_profile(output)
-//     }
 
 //     func order_goride(){
 //       clear_screen(opts)
@@ -206,9 +174,9 @@ func registrationCtrl()  {
     }
 
 
-    // func (u Location) SaveLoc(f string) error {
-    //   return ioutil.WriteFile(f, u.toJson(), 0644)
-    // }
+    func (u Location) SaveLoc(f string) error {
+      return ioutil.WriteFile(f, u.toJson(), 0644)
+    }
 
   
   // Convert to json

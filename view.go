@@ -152,7 +152,6 @@ import "fmt"
       clearScreen()
       var origin string
       var destination string
-      l = make(map[st])
 
       fmt.Println("Order Go-Ride")
       fmt.Println("")
@@ -164,7 +163,9 @@ import "fmt"
       fmt.Scanln(&destination)
 
 
-     
+      // u := Location{}
+      // u = locationFromFile("locations.json")
+      // fmt.Println(u.name)
     }
 
 //     func order_goride_confirm(){
